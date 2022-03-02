@@ -398,6 +398,10 @@ export class Parser {
 			case "cfml":
 				this.setCommentFormat("<!---", "<!---", "--->");
 				break;
+				
+			case "omsiscript":
+				this.delimiter = "'";
+				break;
 
 			case "plaintext":
 				this.isPlainText = true;
